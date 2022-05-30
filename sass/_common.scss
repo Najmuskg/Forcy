@@ -1,0 +1,118 @@
+
+body {
+  background-color: $color--white;
+  color: $color--body-copy;
+  display: flex;
+  font-family: $font--main;
+  font-weight: 400;
+  flex-direction: column;
+  min-height: 100vh;
+  // max-width: 100vh;
+  position: relative;
+}
+
+input,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+h1 {
+  font-family: $font--bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 66.3658px;
+  line-height: 109%;
+  letter-spacing: -0.01em;
+  color: $color--white;
+}
+h2 {
+  font-family: $font--bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  color: $color--white;
+}
+h3 {
+  font-family: $font--bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: $color--white;
+}
+
+h4 {
+  font-family: $font--main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.01em;
+  color: $color--white;
+}
+
+a {
+  font-family: $font--bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: $color--body-copy;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+p{
+font-family:$font--main;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: -0.01em;
+color:$color--white;
+}
+
+.btn {
+  width: 183px;
+  height: 44px;
+  background: $color--1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 36px;
+}
+
+.bg-blue {
+  background-color: $color--body-copy;
+
+  * {
+      color: $color--white;
+  }
+}
+
+p,
+ul,
+ol {
+  color: $color--body-copy;
+  font-family: $font--main;
+  font-size: $baseFontSize;
+  line-height: 160%;
+  margin: 0;
+}
+
+.holder {
+  max-width: $site-width + px;
+  margin: 0 auto;
+  position: relative;
+}

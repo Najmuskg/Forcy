@@ -1,0 +1,70 @@
+.fixed--btn {
+    position: fixed;
+    right: -103px;
+    top: 50%;
+    transform: rotate(-90deg);
+    z-index: 991;
+    transition: all 0.3s ease;
+    width: 217.76px;
+    border-radius: 35px 35px 0 0;
+    height: 44px;
+    background: $color--1;
+    display: flex;
+    justify-content: center;
+    a {
+        padding-top: 5px;
+        font-size: 11px;
+    }
+    &:hover {
+        right: -88px;
+    }
+}
+
+.header--area {
+    background-color: transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 20px 0;
+    .holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .logo--area {
+            width: 30%;
+            img {
+                width: 250px;
+            }
+        }
+        .main--menu__area {
+            width: 70%;
+            text-align: right;
+            ul {
+                list-style: none;
+                padding: 30px 0;
+                li {
+                    display: inline-block;
+                    margin-left: 55px;
+                    a {
+                        display: block;
+                        color: $color--white;
+                        font-size: 13px;
+                        &::after {
+                            @include animate-line;
+                        }
+
+                        &:hover {
+                            &::after {
+                                @include animate-line-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
