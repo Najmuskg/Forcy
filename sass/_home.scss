@@ -1,3 +1,5 @@
+// <=====================Start of.banner--wrap Sass=====================>
+
 .banner--wrapper {
     background-color: rgba($color--2, 0.6);
     @include bg-cover;
@@ -53,9 +55,13 @@
     }
 }
 
+// <=====================Start of.title--text__wrap Sass=====================>
+
 .title--text__wrapper {
     width: 100%;
     padding: 50px 0;
+    z-index: 1;
+    position: relative;
     .bg--block {
         position: absolute;
         img {
@@ -68,7 +74,7 @@
         grid-template-columns: 1fr 1fr;
 
         .section--title {
-            padding: 90px 0;
+            padding: 53px 0;
             h4 {
                 margin-bottom: 7px;
             }
@@ -92,37 +98,150 @@
     }
 }
 
-.image--wrapper {
-    width: 100%;
-    padding-bottom: 50px;
-    .inner__image {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+// <=====================Start of.image--wrap Sass=====================>
+
+.image--Wrapper {
+    z-index: 1;
+    position: relative;
+    .image--promo {
+        display: flex;
+        margin: 0 -12px;
+        flex-wrap: wrap;
         gap: 20px;
-        &::after {
-            content: "";
-            background-color: rgba(36, 45, 63, 0.5);
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 0;
+        justify-content: center;
+        padding: 40px 0 60px 0;
+        a {
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            height: 228px;
+            width: 622px;
+            padding: 0.625rem;
+            position: relative;
+            &::before {
+                background-color: rgba(36, 45, 63, 0.5);
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+            .image--promo__item_img {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 0;
+                transition: all 0.5s ease-in-out;
+                &::after {
+                    background-image: url(/image/vhector.png);
+                    @include bg-cover;
+                    content: "";
+                    height: 100%;
+                    left: 0;
+                    opacity: 0.3;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    z-index: 2;
+                }
+            }
+            h3 {
+                text-transform: capitalize;
+                position: relative;
+                width: 100%;
+                z-index: 4;
+                margin: 0 0 15px 15px;
+            }
+            .anti--sub {
+                max-width: 300px;
+            }
+            &:hover {
+                .image--promo__item_img {
+                    transform: scale(1.04);
+                }
+            }
         }
-img{
- 
+    }
 }
-        h3 {
-            height: 100%;
-            left: 15px;
-            position: absolute;
-            top: -20px;
-            width: 100%;
-            z-index: 2;
-            transition: all 0.5s ease-in-out;
+
+// <===================== Start of.technologies--wrap Sass=====================>
+
+.technologies--wrapper {
+    @include bg-cover;
+    &::before {
+        background-color: rgba(36, 45, 63, 0.5);
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .technologies--item {
+        display: flex;
+        justify-content: space-between;
+        padding: 98px 0;
+        .technologies--item__info {
+            margin-top: 220px;
+            h4 {
+                margin: 0 0 0px 0;
+            }
+            h2 {
+                margin: 18px 0 30px 0;
+            }
+            p {
+                max-width: 520px;
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
         }
-        .anti-sub {
-            margin-top: -15px;
+        .technologis--item__link {
+            margin-top: 158px;
+            padding: 0 30px 0 0px;
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 20px;
+                    &::after {
+                        position: absolute;
+                        background: white;
+                        content: "";
+                        right: -48px;
+                        height: 3px;
+                        width: 41px;
+                        margin-top: 13px;
+                    }
+
+                    a {
+                        font-size: 10px;
+                        &::after {
+                            @include animate-line;
+                        }
+
+                        &:hover {
+                            &::after {
+                                @include animate-line-hover;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

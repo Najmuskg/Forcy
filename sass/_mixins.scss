@@ -21,6 +21,11 @@
     background-size: cover;
 }
 
+
+@mixin d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
 // @mixin btn {
 //     width: 183px;
 //     height: 44px;
