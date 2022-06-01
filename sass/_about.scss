@@ -1,0 +1,56 @@
+// <=====================Start of.banner--wrap Sass=====================>
+
+.banner--wrapper {
+    background-color: rgba($color--2, 0.6);
+    @include bg-cover;
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
+    &::before {
+        background-color: rgba(36, 45, 63, 0.5);
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &::after {
+        background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+        bottom: 0;
+        content: "";
+        height: 220px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+    .holder {
+        z-index: 3;
+        width: 100%;
+        h1 {
+            max-width: 780px;
+        }
+        .btn.caption {
+            display: flex;
+            justify-content: center;
+            &:hover {
+                background: none;
+                border: 2px solid $color--1;
+                transition: all 0.5s ease-in-out;
+                color: $color--white;
+            }
+            a {
+                // display: block;
+            }
+        }
+    }
+}

@@ -579,16 +579,16 @@ ol {
   max-width: 407px;
 }
 
-.title--text__wrapper .title--text .srction--decp__title {
+.title--text__wrapper .title--text .section--decp__title {
   padding-top: 120px;
 }
 
-.title--text__wrapper .title--text .srction--decp__title p {
+.title--text__wrapper .title--text .section--decp__title p {
   max-width: 525px;
   padding-bottom: 30px;
 }
 
-.title--text__wrapper .title--text .srction--decp__title .btn.text {
+.title--text__wrapper .title--text .section--decp__title .btn.text {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1054,5 +1054,78 @@ ol {
   line-height: 1.2em;
   z-index: 1;
   position: relative;
+}
+
+.banner--wrapper {
+  background-color: rgba(1, 87, 150, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.banner--wrapper::before {
+  background-color: rgba(36, 45, 63, 0.5);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.banner--wrapper::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 45, 63, 0)), to(#242d3f));
+  background: -webkit-linear-gradient(top, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+  background: -o-linear-gradient(top, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+  bottom: 0;
+  content: "";
+  height: 220px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.banner--wrapper .holder {
+  z-index: 3;
+  width: 100%;
+}
+
+.banner--wrapper .holder h1 {
+  max-width: 780px;
+}
+
+.banner--wrapper .holder .btn.caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner--wrapper .holder .btn.caption:hover {
+  background: none;
+  border: 2px solid #b1ff00;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #ffffff;
 }
 /*# sourceMappingURL=screen.css.map */
