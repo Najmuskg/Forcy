@@ -1,20 +1,30 @@
-@import "variables";
-@import "mixins";
-
-
-@import "reset";
-@import "common";
-@import "fonts";
-@import "animation";
+// abstracts ======>
+@import "abstracts/variables";
+@import "abstracts/mixins";
 
 
 
+// base ======>
+@import "base/reset";
+@import "base/common";
+@import "base/fonts";
+@import "base/animation";
 
-@import "loader";
-@import "header";
-@import "footer";
+// components ======>
+@import "components/buttons";
+
+
+// layout ======>
+@import "layout/loader";
+@import "layout/header";
+@import "layout/footer";
+
+// pages ======>
+@import "pages/home";
+@import "pages/about"
+
+// thems ======>
 
 
 
-@import "home";
-@import "about"
+

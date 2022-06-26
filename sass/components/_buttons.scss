@@ -1,0 +1,94 @@
+.fixed--btn {
+    position: fixed;
+    right: -103px;
+    top: 50%;
+    transform: rotate(-90deg);
+    z-index: 991;
+    transition: all 0.3s ease;
+    width: 217.76px;
+    border-radius: 35px 35px 0 0;
+    height: 44px;
+    background: $color--1;
+    display: flex;
+    justify-content: center;
+    a {
+        padding-top: 5px;
+        font-size: 11px;
+    }
+    &:hover {
+        right: -88px;
+    }
+}
+
+.btn--caption{
+a{
+    &:hover {
+        background: none;
+        border: 2px solid $color--1;
+        color: $color--white;
+    }
+}
+}
+
+.btn--text {
+    margin-top: 10px;
+a{
+    color: $color--body-copy;
+    &:hover {
+        background: none;
+        border: 2px solid $color--1;
+        color: $color--white;
+    }
+}
+}
+
+.btn--tech{
+    margin-top: 40px;
+    a{
+        color: $color--body-copy;
+        &:hover {
+            background: none;
+            border: 2px solid $color--1;
+            color: $color--white;
+        }
+    }
+}
+
+.btn--services {
+    margin-top: 40px;
+    a{
+        color: $color--body-copy;
+        &:hover {
+            background: none;
+            border: 2px solid $color--1;
+            color: $color--white;
+        }
+    }
+}
+
+.btn--watch {
+    margin-top: 134px;
+    a{
+        color: $color--body-copy;
+        border: 2px solid$color--body-copy;
+        padding: 15px 50px;
+        background: none;
+        &:hover {
+            border: 2px solid $color--1;
+        }
+    }
+}
+
+.btn--watch__inner{
+    margin-top: -100px;
+    margin-left: -18px;
+    a {
+        color: $color--white;
+        font-size: 8px;
+        z-index: 1;
+        position: relative;
+        background: none;
+        border: 2px solid $color--white;
+        padding: 8px 15px;
+    }
+}

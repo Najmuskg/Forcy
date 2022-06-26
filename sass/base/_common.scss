@@ -65,6 +65,7 @@ font-size: 20px;
 line-height: 149%;
 color: $color--white;
 }
+
 a {
   font-family: $font--bold;
   font-style: normal;
@@ -79,6 +80,12 @@ a {
   text-decoration: none;
 }
 
+.btn{
+  background: $color--1;
+  padding: 15px 35px;
+  border-radius: 36px;
+}
+
 p{
 font-family:$font--main;
 font-style: normal;
@@ -89,15 +96,6 @@ letter-spacing: -0.01em;
 color:$color--white;
 }
 
-.btn {
-  width: 183px;
-  height: 44px;
-  background: $color--1;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  border-radius: 36px;
-}
 
 .bg-blue {
   background-color: $color--body-copy;
