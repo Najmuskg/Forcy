@@ -13,12 +13,12 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-// var swiper = new Swiper('.swiper--container', {
-//     direction: 'vertical',
-//     slidesPerView: 1,
-//     // loop: true,
-//     autoplay: {
-//         delay: 1500,
-//         disableOnInteraction:false,
-//     },
-//   });
+var swiper = new Swiper('.swiper--container', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction:false,
+    },
+  });

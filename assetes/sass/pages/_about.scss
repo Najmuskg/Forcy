@@ -1,0 +1,49 @@
+.about--mini-menu {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid $color--6;
+    .mini--menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color:$color--6;
+                    width: 3px;
+                    height: 66px;
+                    top: -20px;
+                    left: 122px;
+                }
+                a {
+                    letter-spacing: 0;
+                    color: $color--6;
+                    &.active {
+                        color: $color--body-copy;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about--technologys-wrapper{
+    .about--technologys{
+        // display: flex;
+        // justify-content: space-between;
+        .technologys--image{
+img{
+ 
+width: 812.66px;
+height: 543px;
+left: -259px;
+top: 855px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+    }
+}

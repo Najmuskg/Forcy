@@ -9,6 +9,16 @@
     width: 0;
     transition: all 0.3s;
 }
+@mixin animate-line-footer {
+    background-color: #71706f;
+    bottom: -5px;
+    content: "";
+    height: 1px;
+    right: 0;
+    position: absolute;
+    width: 0;
+    transition: all 0.3s;
+}
 
 @mixin animate-line-hover {
     left: 0;
